@@ -1,16 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Cedarville+Cursive&family=Poppins:wght@300;400;500;600;700;800&family=Ubuntu:ital@1&family=Varela+Round&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+
 }
 body{
+    min-height: 100vh;
+    background: url("./img/bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
     background-color: rgb(212, 199, 180);
 }
+.header{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+   
 
-.nav_top{
+}
+.logo{
     display: flex;
-    justify-content: space-around; 
-    background-color: whitesmoke;
-    color: black;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
 
+    
+}
+.logo img{
 
+   width: 38px;
+    color: white;
+    text-decoration: none;
+    
+
+}
+.spanlogo{
+    padding-top: 10px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: white;
+   text-decoration: none;
+   font-weight: 500;
+   margin-left: 25px;
+
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+
+}
+.navbar a:hover::before{
+    width: 100%;
 }
