@@ -1,0 +1,30 @@
+.social-links {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.social-links h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin: 0 10px;
+}
+
+.social-links a {
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #666;
+}
